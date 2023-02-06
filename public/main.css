@@ -1,0 +1,37 @@
+.barX g.tick {
+    writing-mode: vertical-lr;
+}
+
+g.barX {
+    text-anchor: start;
+}
+
+h3 {
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+
+h1 {
+    margin: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#character_name {
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+#character_race {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 3px;
+    margin-bottom: 25px;
+}
+
+#donut_chart{
+    vertical-align:top;
+}
