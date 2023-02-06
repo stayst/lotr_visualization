@@ -60,7 +60,6 @@ function init() {
     let width = screen.width;
     let height = screen.height;
     prepareData();
-    console.log(data);
     visualize(streamData);
 
 }
@@ -382,7 +381,7 @@ function drawDonutChart(character){
         .data(data_ready)
         .enter()
         .append('text')
-        .text( function(d) { console.log(d.data.key) ; return d.data.key } )
+        .text( function(d) { return d.data.key } )
         .attr('transform', function(d) {
             var pos = outerArc.centroid(d);
             var midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
@@ -396,8 +395,6 @@ function drawDonutChart(character){
 }
 
 function drawBarChart(character, book, total){
-    console.log(book);
-    console.log(character);
     d3.select("#bar_chart").select("svg").remove();
     var data = barData[character][book];
 
